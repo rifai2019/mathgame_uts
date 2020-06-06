@@ -1,12 +1,12 @@
 <?php
 session_start();
 
-$dbhost = "localhost";
-$dbuser = "root";
-$dbpass = "";
-$dbname = "game";
+$host = "localhost";
+$username = "id13981131_mathgame";
+$password = "eY4}[WUD99ETv3gW";
+$db = "id13981131_mathgame51";
 
-$conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
+$conn = mysqli_connect($host, $username, $password, $db);
     if (!$conn){
         die("Koneksi gagal:" . mysqli_connect_error());
     } else {
@@ -63,4 +63,3 @@ session_destroy();
 </p>
 </body>
 </html>
-
